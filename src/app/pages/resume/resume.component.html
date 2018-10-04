@@ -1,0 +1,17 @@
+<div class="accordion" id="accordionExample" *ngFor="let content of contents">
+    <div class="card">
+        <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#" aria-expanded="true" aria-controls="collapseOne">
+                    {{content.header}}
+                </button>
+            </h5>
+        </div>
+
+        <div id="#" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+                {{content.body.data}}
+            </div>
+        </div>
+    </div>
+</div>
